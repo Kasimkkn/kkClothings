@@ -42,8 +42,7 @@ const Slider = () => {
     return (
         <section id="product-slider" className="relative">
             <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
-                pagination={{ clickable: true }}
+                modules={[Autoplay]}
                 autoplay={{ delay: 3000 }}
                 loop={true}
                 className="main-slider"
