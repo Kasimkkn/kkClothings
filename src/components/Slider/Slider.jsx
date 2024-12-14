@@ -1,14 +1,13 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules'; // Only import Autoplay module
 import slide1 from '../../assets/images/main-slider/5.jpg';
 import slide2 from '../../assets/images/main-slider/2.png';
 import slide3 from '../../assets/images/main-slider/4.jpg';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import 'swiper/css/autoplay'; // Include only Autoplay styles
 
 // Slider Data
 const sliderData = [
@@ -42,7 +41,7 @@ const Slider = () => {
     return (
         <section id="product-slider" className="relative">
             <Swiper
-                modules={[Autoplay]}
+                modules={[Autoplay]} // Only Autoplay module
                 autoplay={{ delay: 3000 }}
                 loop={true}
                 className="main-slider"

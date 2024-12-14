@@ -8,7 +8,7 @@ const PopularProducts = () => {
             <div className="container mx-auto px-4">
                 <h2 className="text-2xl font-bold mb-8">Popular Products</h2>
                 <div className="flex flex-wrap -mx-4">
-                    {products.map((product) => (
+                    {products.slice(0, 4).map((product) => (
                         <div key={product.id} className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
                             <ProductCard
                                 category={product.Category}

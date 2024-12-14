@@ -27,8 +27,10 @@ export const products = [
     "Fit": "Slim Fit",
     "ProductImages": [
       product1Image,
-      "https://example.com/images/classic-white-shirt-back.jpg",
-      "https://example.com/images/classic-white-shirt-zoom.jpg"
+      product3Image,
+      product4Image,
+      product2Image,
+      product6Image
     ],
     "CareInstructions": "Machine wash cold, do not bleach, tumble dry low.",
     "SKU": "CLS-MN-001",
